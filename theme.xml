@@ -90,7 +90,7 @@ license:        creative commons CC-BY-NC-SA
    <view name="basic,detailed,video">
       <textlist name="gamelist">
          <pos>0.04 0.235</pos>
-         <size>0.65 0.75</size>
+         <size>0.65 0.70</size>
          <alignment>left</alignment>
          <lineSpacing>1.5</lineSpacing>
          <!-- <fontSize>0.038</fontSize> -->
