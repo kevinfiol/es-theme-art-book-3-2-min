@@ -8,24 +8,15 @@ license:        creative commons CC-BY-NC-SA
    <formatVersion>7</formatVersion>
 
    <variables>
-      <!-- <logoFont>./_inc/fonts/IBMPlexMono-Bold.ttf</logoFont> -->
-      <!-- <bodyFont>./_inc/fonts/IBMPlexMono-Bold.ttf</bodyFont> -->
-      <logoFont>./_inc/fonts/AnalogueOS-Regular.ttf</logoFont>
-      <bodyFont>./_inc/fonts/AnalogueOS-Regular.ttf</bodyFont>
-      <!-- <logoFont>./_inc/fonts/JetBrainsMono-Regular.ttf</logoFont> -->
-      <!-- <bodyFont>./_inc/fonts/JetBrainsMono-Regular.ttf</bodyFont> -->
+      <mainFont>./_inc/fonts/BPreplayBold-unhinted.otf</mainFont>
    </variables>
 
    <view name="system,basic,detailed,video,grid">
       <helpsystem name="help">
          <pos>1 1</pos>
       </helpsystem>
-<!--       <image name="logo">
-         <path>./_inc/systems/${system.theme}.svg</path>
-         <path>./_inc/systems/${system.theme}.png</path>
-      </image> -->
       <text name="logoText">
-         <fontPath>${logoFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <forceUppercase>false</forceUppercase>
          <lineSpacing>1</lineSpacing>
          <alignment>left</alignment>
@@ -33,14 +24,6 @@ license:        creative commons CC-BY-NC-SA
          <fontSize>0.054</fontSize>
          <color>ffffff</color>
       </text>
-<!--       <image name="background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <tile>true</tile>
-         <zIndex>1</zIndex>
-         <color>111111</color>
-      </image> -->
    </view>
 
    <view name="system">
@@ -64,15 +47,9 @@ license:        creative commons CC-BY-NC-SA
       <image name="background" extra="true">
          <color>000000</color>
       </image>
-<!--       <image name="logo">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.18</pos>
-         <maxSize>0.4 0.15</maxSize>
-      </image> -->
       <text name="logoText">
          <pos>0.04 0.10</pos>
          <size>0.9 0.075</size>
-         <!-- <fontSize>0.06</fontSize> -->
          <fontSize>0.08</fontSize>
          <color>ffffffcc</color>
       </text>
@@ -93,10 +70,9 @@ license:        creative commons CC-BY-NC-SA
          <size>0.65 0.70</size>
          <alignment>left</alignment>
          <lineSpacing>1.5</lineSpacing>
-         <!-- <fontSize>0.038</fontSize> -->
          <fontSize>0.046</fontSize>
          <scrollSound>./_inc/sounds/select.wav</scrollSound>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <horizontalMargin>0.008</horizontalMargin>
          <selectorColor>ffffffcc</selectorColor>
          <selectedColor>000000</selectedColor>
@@ -108,7 +84,7 @@ license:        creative commons CC-BY-NC-SA
    <view name="detailed,video,grid">
       <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
          <visible>false</visible>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <alignment>left</alignment>
          <color>ffffff</color>
       </text>
@@ -123,13 +99,13 @@ license:        creative commons CC-BY-NC-SA
       </text>
       <datetime name="md_releasedate,md_lastplayed">
          <visible>false</visible>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <color>444444</color>
          <alignment>left</alignment>
       </datetime>
       <rating name="md_rating">
          <visible>false</visible>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <color>444444</color>
          <alignment>left</alignment>
       </rating>
@@ -208,7 +184,7 @@ license:        creative commons CC-BY-NC-SA
       </gridtile>
       <text name="gridtile">
          <alignment>center</alignment>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <fontSize>0.036</fontSize>
          <lineSpacing>1.2</lineSpacing>
          <color>111111</color>
@@ -220,17 +196,17 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="menu">
       <menuText name="menutitle">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <fontSize>0.034375</fontSize>
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <fontSize>0.0325</fontSize>
          <color>666666</color>
       </menuText>
       <menuText name="menutext">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <fontSize>0.036</fontSize>
          <color>ffffff77</color>
          <separatorColor>000000</separatorColor>
@@ -238,7 +214,7 @@ license:        creative commons CC-BY-NC-SA
          <selectedColor>ffffff</selectedColor>
       </menuText>
       <menuTextSmall name="menutextsmall">
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <fontSize>0.03</fontSize>
          <color>777777</color>
       </menuTextSmall>
@@ -256,12 +232,12 @@ license:        creative commons CC-BY-NC-SA
          <fontSize>0.03125</fontSize>
          <alignment>left</alignment>
          <verticalAlignment>center</verticalAlignment>
-         <fontPath>${bodyFont}</fontPath>
+         <fontPath>${mainFont}</fontPath>
          <color>FFFFFF55</color>
       </text>
       <batteryIndicator name="batteryIndicator">
          <pos>0.915 0.013</pos><!-- x=439.2 y=4.16 -->
-         <size>0.07 0.07</size><!-- 33.6 x 22.4 -->
+         <size>0.06 0.06</size><!-- 33.6 x 22.4 -->
          <full>./_inc/images/battery-100.svg</full>
          <at75>./_inc/images/battery-75.svg</at75>
          <at50>./_inc/images/battery-50.svg</at50>
